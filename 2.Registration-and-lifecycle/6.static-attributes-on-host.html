@@ -1,0 +1,11 @@
+<!-- https://www.polymer-project.org/1.0/docs/devguide/registering-elements.html#host-attributes
+If a custom elements needs HTML attributes set on it at create-time, these may
+be declared in a hostAttributes property on the prototype, where keys are the
+attribute name and values are the values to be assigned. Values should typically
+be provided as strings, as HTML attributes can only be strings; however, the
+standard serialize method is used to convert values to strings, so true will
+serialize to an empty attribute, and false will result in no attribtue set,
+and so forth (see Attribute serialization for more details). --><html><head><script type="application/dart" src="6.static-attributes-on-host.bootstrap.initialize.dart"></script>
+
+<!--Note: As of Polymer 0.9, the class attribute can’t be configured using
+hostAttributes.--></head><body></body></html>

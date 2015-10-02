@@ -1,0 +1,10 @@
+<!--When a property only “produces” data and never consumes data, this can be
+made explicit to avoid accidental changes from the host by setting the readOnly
+flag to true in the properties property definition. In order for the element to
+actually change the value of the property, it must use a private generated setter
+of the convention _setProperty(value).--><html><head></head><body><dom-module id="read-only">
+  <template>
+    <p>{{hello}}</p>
+  </template>
+<script type="application/dart" src="8.read-only.bootstrap.initialize.dart"></script>
+</dom-module></body></html>

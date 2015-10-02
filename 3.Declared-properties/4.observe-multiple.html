@@ -1,0 +1,16 @@
+<!--To observe changes to a set of properties, use the observers array.
+
+These observers differ from single-property observers in a few ways:
+
+* Observers are not invoked until once all dependent properties are defined
+(!== undefined). So each dependent properties should have a default value
+defined in properties (or otherwise be initialized to a non-undefined value)
+to ensure the observer is called.
+
+* Observers do not receive old values as arguments, only new values. Only
+single-property observers defined in the properties object receive both old and
+new values.
+--><html><head><script type="application/dart" src="4.observe-multiple.bootstrap.initialize.dart"></script>
+
+<!--In addition to properties, observers can also observe paths to
+sub-properties, paths with wildcards, or array changes.--></head><body></body></html>

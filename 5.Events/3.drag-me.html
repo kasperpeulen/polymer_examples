@@ -1,0 +1,25 @@
+<html><head></head><body><dom-module id="drag-me">
+  <style>
+    #dragme {
+      width: 500px;
+      height: 500px;
+      color: #eee;
+      background: gray;
+      text-align: center;
+      -webkit-user-select: none;
+    }
+  </style>
+  <template>
+    <div id="dragme" class="horizontal layout center" on-mouseenter="handleHover" on-mouseleave="handleLeave" on-track="handleTrack">
+      <div class="flex self-center">
+        <p>{{message}}</p>
+
+        <p id="coord" hidden="">x = <span>{{x}}</span>, y = <span>{{y}}</span>
+        </p>
+      </div>
+    </div>
+  </template>
+  <script type="application/dart" src="3.drag-me.bootstrap.initialize.dart"></script>
+</dom-module>
+
+</body></html>
