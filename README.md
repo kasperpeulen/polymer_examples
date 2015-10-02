@@ -1,8 +1,7 @@
 #polymerjs_examples
 
-Instructions:
+### Instructions:
 
-* Make sure your terminal is in the polymerjs_examples directory.
 * Run `pub get`.
 * Run `bower install`.
 * Run `pub serve`.
